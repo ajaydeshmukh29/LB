@@ -1,0 +1,27 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Application which accept radius of circle from user and calculate its area. let value of PI as 3.14. (Area = PI * Radius * Radius)
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+double CircleArea(float fRadius)
+{
+  const float PI = 3.14;
+  float Area = PI * fRadius * fRadius;
+  printf("Output : %f\n",Area);
+}
+
+int main()
+{
+  float fValue = 0.0;
+  double dRet = 0.0;
+
+  printf("Enter radius : ");
+  scanf("%f",&fValue);
+
+  dRet = CircleArea(fValue);
+
+  return 0;
+}
